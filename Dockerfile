@@ -6,7 +6,7 @@ RUN mkdir -p /home/node/api/node_modules
 
 WORKDIR /home/node/api
 
-COPY package.json yarn.* ./
+COPY package*.json ./
 
 RUN npm install
 
