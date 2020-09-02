@@ -8,11 +8,11 @@ WORKDIR /home/node/api
 
 COPY package.json yarn.* ./
 
-RUN yarn
+RUN npm install
 
 COPY . .
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
 
