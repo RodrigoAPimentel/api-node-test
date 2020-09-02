@@ -38,11 +38,11 @@ class App {
   }
 
   server() {
-    this.app.listen(process.env.APP_PORT, () => {
-      console.log(
-        `App started on ${process.env.APP_URL}:${process.env.APP_PORT} [${process.env.NODE_ENV}]; press Ctrl-C to terminate.`
-      );
-    });
+    this.app.listen(process.env.APP_PORT, process.env.APP_URL);
+
+    console.log(
+      `App started on ${process.env.APP_URL}:${process.env.APP_PORT} [${process.env.NODE_ENV}]; press Ctrl-C to terminate.`
+    );
   }
 }
 
