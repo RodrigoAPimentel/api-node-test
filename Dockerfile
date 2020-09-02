@@ -1,4 +1,4 @@
-FROM node:13.13.0
+FROM nodejs:10
 
 RUN mkdir -p /home/node/api/node_modules && chown -R node:node /home/node/api
 
