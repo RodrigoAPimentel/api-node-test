@@ -1,5 +1,7 @@
 FROM nodejs:10
 
+USER root
+
 RUN mkdir -p /home/node/api/node_modules && chown -R node:node /home/node/api
 
 WORKDIR /home/node/api
