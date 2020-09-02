@@ -1,8 +1,8 @@
 FROM nodejs:10
 
-USER node
+USER root
 
-RUN mkdir -p /home/node/api/node_modules && chown -R node:node /home/node/api
+RUN mkdir -p /home/node/api/node_modules
 
 WORKDIR /home/node/api
 
@@ -10,7 +10,7 @@ COPY package.json yarn.* ./
 
 RUN yarn
 
-COPY --chown=node:node . .
+COPY . .
 
 EXPOSE 3000
 
