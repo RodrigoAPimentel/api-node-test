@@ -11,7 +11,7 @@ FROM openshift/nodejs:latest
 
 # RUN npm config set strict-ssl false
 
-WORKDIR /usr/app
+# WORKDIR /usr/app
 
 COPY package*.json ./
 
