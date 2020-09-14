@@ -1,4 +1,4 @@
-FROM openshift/nodejs:latest
+FROM nodejs:latest
 
 # RUN npm config set registry https://10.58.3.133/repository/digital-npm-group/
 
